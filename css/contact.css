@@ -1,0 +1,89 @@
+/* Contact Section */
+
+.contact-item {
+    float: left;
+    width: 33%;
+    text-align: center;
+ }
+
+ .contact-icon {
+    color: var(--mainColor);
+ }
+
+ .contact-item .contact-item-text {
+   text-transform: capitalize;
+   margin: 15px 0;
+ }
+
+ .contact-item-desc {
+    color: var(--grayDarkColor);
+ }
+
+
+ form {
+    margin-top: 50px;
+ }
+
+ form .form-content {
+   text-align: center;
+ }
+
+ form input {
+    width: 718px;
+ }
+
+ .form-content-commen {
+    padding: 10px;
+    background-color:#f8f8f8;
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+ }
+ 
+ form .input-inline {
+    width: 350px;
+
+ }
+
+.contact .space-input {
+    margin-right: 13px;
+ }
+
+
+input[type=text]:focus ,  form textarea:focus{
+    border: 2px solid var(--mainColor);   
+}
+
+ form .mg-contact {
+    margin: 15px 0;
+ }
+
+ form textarea {
+    width: 718px;
+ }
+
+ 
+ .form-btn {
+    display: block;
+    background-color: var(--mainColor);
+    color: var(--wightColor);
+    padding: 10px 25px 10px 25px;
+    border: 0;
+    border-radius:2px ;
+    transition: opacity .5s ;
+
+ }
+
+ .contact .form-btn {
+    margin: auto;
+    margin-top: 30px;
+ }
+
+.form-btn::first-letter {
+    text-transform: capitalize;
+}
+
+.form-btn:hover {
+    opacity: .9;
+    
+}

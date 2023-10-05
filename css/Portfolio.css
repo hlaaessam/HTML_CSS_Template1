@@ -1,0 +1,263 @@
+/* ------------------------------------ */
+ /* Portfoilo Section */
+
+
+
+
+/* .Portfolio{
+    background-color:rgb(250, 250, 250);
+    background-color: var(--backgroundColor);
+}
+.img-content {
+  
+    text-align: center;
+    position: relative;
+    float: left;
+  
+
+}
+
+
+.Portfolio-content-center {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+visibility: hidden;
+z-index: 1;
+} 
+
+
+.Portfolio .img1 {
+   
+    background-image: url(../images/work1.jpg);
+    background-size: cover ;
+} 
+
+
+
+.Portfolio .img2 {
+    background-image: url(../images/work2.jpg);
+    background-size: cover ;
+   
+}
+
+.Portfolio .img3 {
+    background-image: url(../images/work3.jpg);
+    background-size: cover ;
+}
+
+
+.Portfolio .img4 {
+    background-image: url(../images/work4.jpg);
+    background-size: cover ;
+}
+
+.Portfolio .img5 {
+    background-image: url(../images/work5.jpg);
+    background-size: cover ;
+}
+
+.Portfolio .img6 {
+    background-image: url(../images/work6.jpg);
+    background-size: cover ;
+}
+
+.Portfolio-item-hover {
+    width: 28%;
+    height: 300px;
+    margin-left: 4%;
+   
+}
+
+
+.Portfolio-item-hover {
+    position: relative;
+
+}
+
+.Portfolio-item-hover::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: -22;
+    left: -22;
+    bottom: -22;
+    right: -22;
+    opacity: .75;
+    visibility: hidden;
+
+}
+.Portfolio-item-hover:hover::after  {
+    visibility: visible;
+    
+}
+
+.Portfolio-item-hover:hover .Portfolio-category ,
+.Portfolio-item-hover:hover .Portfolio-desc,
+.Portfolio-item-hover:hover .a-Portfolio-item {
+    top: 0;
+
+}
+
+.Portfolio-item-hover:hover .Portfolio-content-center {
+    visibility: visible
+}
+
+
+.Portfolio-category {
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    top:10px;
+    transition: top .5s ;
+    transition-delay: .2s;
+   
+  
+
+}
+
+.Portfolio-desc {
+    color: var(--wightColor);
+    margin-top: 5px;
+    margin-bottom: 13px;
+    font-weight: 750;
+    position: relative;
+    top:10px;
+    transition: top .5s ;
+    transition-delay: .4s;
+  
+ 
+   
+}
+
+.Portfolio-desc::first-letter {
+    text-transform: capitalize;   
+}
+
+
+ .a-Portfolio-item {
+    padding: 10px;
+    background-color: var(--mainColor);
+    color: var(--wightColor); 
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top:10px;
+    transition: top .5s ;
+    transition-delay: .4s;
+
+}
+
+.three-second-classes {
+    margin-top: 45px;
+} */
+
+
+/* orrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.Portfolio{
+    background-color: var(--backgroundColor);
+}
+
+
+.Portfolio-content {
+    width: 90%;
+    margin: auto;   
+}
+
+
+
+.Portfolio-item {
+    float: left;
+    width: 33%;
+    margin-bottom: 6px;
+    position: relative;
+    padding: 22px;
+}
+
+.Portfolio-item img {
+    width: 100%;
+}
+
+.Portfolio-item.mg {
+    margin: 0 .5%;
+}
+
+.Portfolio-item .layer-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+
+.Portfolio-item:hover .layer-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* law etnen wa5den absolute f eli gwa hyt7rk blnsba lli bara  */
+
+.layer-content .Portfolio-content-center {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.Portfolio-category {
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    top:10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s , opacity .5s;
+    transition-delay: .2s;    
+}
+
+.Portfolio-desc {
+    color: var(--wightColor);
+    margin-top: 5px;
+    margin-bottom: 13px;
+    font-weight: 750;
+    position: relative;
+    top:10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s , opacity .5s;
+    transition: top .5s;
+    transition-delay: .4s;
+}
+
+.Portfolio-desc::first-letter {
+    text-transform: capitalize;   
+}
+
+
+.a-Portfolio-item {
+    padding: 10px;
+    background-color: var(--mainColor);
+    color: var(--wightColor); 
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top:10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s , opacity .5s;
+    transition: top .5s;
+    transition-delay: .4s;
+}
+
+
+
+

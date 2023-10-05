@@ -1,0 +1,37 @@
+/* number section */
+
+.number {
+    background-image: url(../images/background22.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    height: 285px;
+    position: relative;/* overlay */  
+}
+
+.number-item {
+    float: left;
+    width: 25%;
+    z-index: 1;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.number-item-icon {
+    color: var(--mainColor);  
+}
+
+.number-item-num {
+    display: block;
+    font-size: 30px;
+    font-weight: 750;
+    color: var(--wightColor);
+    margin:15px 0 7px 0 ;
+}
+
+.number-item-text {
+    color: var(--wightColor);
+}
+
+.number-item-text::first-letter {
+    text-transform: capitalize;
+}

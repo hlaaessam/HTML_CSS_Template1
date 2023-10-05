@@ -1,0 +1,39 @@
+
+/*  share section */
+.share {
+    background-color: #1c1d21;
+    text-align: center;
+    height: 300px;
+}
+
+.share-img img {
+    margin-top: 50px ;
+}
+
+.share-icons {
+    margin: 30px 0 50px 0;
+
+}
+
+.share-icons a i:hover {
+    opacity: .8;
+}
+
+.share-icon {
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    margin: 5px 0;
+    background-color: var(--mainColor);
+    color: var(--wightColor);
+    border-radius: 3px;
+}
+
+.share-desc {
+    color: var(--wightColor);
+    font-size: 14px;
+}
+
+.share-desc span{
+    color: var(--mainColor);
+}

@@ -1,0 +1,68 @@
+/* Service */
+.Service {
+    background-color: var(--backgroundColor);
+ } 
+
+ .Service-content .section-header  {
+    text-align: left;
+ }
+
+ .Service-content .line {
+    margin: 0 0 0 0;
+ }
+
+ .Service-content {
+    float: left;
+    width: 50%;
+ }
+
+.Service-content-desc {
+    color: var(--grayDarkColor);
+    margin: 45px 0 20px;
+    line-height: 1.5;   
+}
+
+.Service-content-list {
+    color: var(--grayDarkColor);
+    list-style-type: none;
+}
+
+.Service-content-list > li{
+    font-size: 15px;
+}
+
+.Service-content-list > li i {
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor) ;
+    border-radius: 50%;
+    padding: 5px 4px 3px 3px ;
+}
+.Service-content-img img {
+    width: 90%;
+    background-size: cover;
+    border-radius: 3px;
+    
+}
+
+.Service-balls {
+    list-style-type: none;
+    text-align: center;
+}
+
+.Service-balls li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--whiteGrayColor);
+    border-radius: 50%;
+    margin: 15px 0 0 9px;
+    transition: background-color .3s , width .3s ,  border-radius .3s;
+
+}
+
+.Service-balls li:hover , .Service-balls li.active {
+    background-color: var(--mainColor);
+    width: 20px;
+    border-radius: 5px;
+    
+}

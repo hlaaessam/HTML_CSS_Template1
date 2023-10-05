@@ -1,0 +1,123 @@
+ /* 3-Sections */
+/* 3.0-Header Section */
+
+.header {
+    position: fixed;
+    /* fixed , absolute bt5li el elements tnkmsh 3shan keda bndeh width 100% (from block to inline-block)*/
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .1); 
+}
+
+.logo {
+    width: 40%;
+    float: left;
+}
+
+.logo img {
+    width: 20%;
+    margin-top: 15px;
+}
+
+.navbar {
+    width: 60%;
+    list-style-type: none;
+    float: left;
+    text-align: right;
+}
+
+.navbar > li {
+    display: inline-block;  
+    text-align: right;
+}
+
+/* a -> inline element */
+.navbar > li > a { 
+    text-decoration: none;
+    padding: 30px 15px;
+    display: block;/* 3shan el paading */
+    font-size: 14px;
+   
+}
+
+.navbar > li > a {
+    color: var(--wightColor);
+
+}
+
+.navbar > li  .a-plog {
+    color: black;
+}
+
+.navbar > li > a::after , .navbar > li > a.active::after {
+    content: "";
+    height: 2px;
+    background-color: var(--mainColor);
+    display: block;
+    transition: .6s;
+    margin-top: 2px;
+    border-radius: 3.5px;
+}
+
+.navbar > li > a::after  {
+    width: 0%;
+}
+
+.navbar > li > a.active::after  {
+    width: 100%;
+}
+.navbar > li > a:hover::after {
+    width: 100%;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+   
+}
+
+.dropdown-menu  {
+    position: absolute;
+    background-color: var(--mainColor);
+    text-align: center;
+    border-radius: 2px;
+    width: 130px;
+    padding: 5px;  
+    left: -50%;
+    top: 70px;
+    /* display: none; */
+    /* instead */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .7s visibility .7s;
+    list-style-type: none;
+ 
+
+
+}
+
+.dropdown-menu > li > a {
+    color: var(--wightColor);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-menu {
+    /* display: block; */
+    /* instead */
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+/* .header-content-float {
+    overflow: hidden;
+
+} */
+/* msh hyzhar el dropdown */
+
+/* instead */
+.clear {
+    clear: both;
+} 

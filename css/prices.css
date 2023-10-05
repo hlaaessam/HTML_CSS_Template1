@@ -1,0 +1,78 @@
+/* prices section */
+.prices-item {
+    float: left;
+    width: 30%;
+    border: 1px solid var(--whiteGrayColor);
+    border-radius: 3px;
+    text-align: center;/* to center text */
+    position: relative;
+    z-index: 1;  
+}
+
+.prices-item.prices-space {
+    margin: 0 5% ;
+}
+
+.prices-item-title {
+    text-transform:uppercase ;
+    color: var(--grayDarkColor);
+    display: block;
+    margin:40px 0 20px 0;
+}
+
+.prices-item .dollar-section {
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+    margin: auto; /* center div with width */
+    width: 30%;
+    padding:25px 0;
+    margin-bottom:25px;
+  
+}
+
+.prices-item-num {
+    display: block;
+    color: black;
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.prices-item-time {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 14px;
+    font-family: 'Mooli', sans-serif;
+
+}
+
+.prices-item-p {
+    margin: 20px 0;
+    color: var(--grayDarkColor);
+}
+
+.prices-item-btn {
+    margin:17px 0 55px 0;
+    padding: 10px 25px;
+    font-weight: 530;
+    background: none;
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    cursor: pointer;
+}
+
+.prices-item-btn::first-letter {
+    text-transform: capitalize;
+}
+
+
+.tb-effect:hover .prices-item-title {
+    color: var(--mainColor);
+    transition: color .5s;
+ }
+ .tb-effect:hover .prices-item-num ,  
+ .tb-effect:hover .prices-item-time{
+    color: var(--wightColor);
+    transition: color .5s;
+ }
+

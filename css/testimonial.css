@@ -1,0 +1,59 @@
+/* testimonial section */
+
+.testimonial {
+    background-image: url(../images/background3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+ }
+
+  .testimonial-item {
+    float: left;
+    width: 50%;
+ }
+
+ .testimonial-item-img {
+    margin-right: 20px;
+    border-radius: 50%;
+    float: left;
+ }
+
+ .spans {
+    margin: 30px 0 ;   
+ }
+
+ .testimonial-item-name , .team-item-name {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+
+ }
+
+ .testimonial-item-name {
+    color: var(--wightColor);
+    
+ }
+ .testimonial-item-work {
+    display: block;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    font-size: 12px;
+ }
+
+ .testimonial-item-content {
+    margin-top: 130px;
+   
+ } 
+
+ .testimonial-item-text {
+    color: var(--wightColor);
+    line-height: 1.5;
+    margin-top: 40px;
+
+ }
+ .marge {
+    margin-left: 120px;
+ }

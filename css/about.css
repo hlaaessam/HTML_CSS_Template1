@@ -1,0 +1,48 @@
+/* About Section */
+.about {
+    background-color: var(--wightColor);
+ }
+
+.about-item {
+    width: 31%;
+    height: 230px;
+    background-color: var(--wightColor);
+    float: left;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--whiteGrayColor);
+    border-radius:3px;
+    z-index: 1;
+}
+
+.about-item .item-title {
+    text-transform: capitalize;
+    font-size: 20px;
+    font: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: color .5s;
+}
+
+.about-item .item-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(118, 115, 115);    
+}
+
+.about-item.af {
+    margin: 0 3.5%;
+}
+
+.about-item .a-about-item {
+    color: var(--mainColor);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.icon {
+    margin-bottom: 20px;
+    color: var(--mainColor);
+    width: 30px;
+    height: 20px;
+}
